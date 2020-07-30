@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
+import Product from './Product';
 
 class Products extends Component {
-  render(){
+  constructor() {
+    super();
+    this.state = {
+      products: [
+        { name: 'GTAV', price: 4000 },
+        { name: 'The Witcher 3', price: 1500 },
+        { name: 'Red Dead Redemption 2', price: 5000 },
+      ]
+    }
+  }
+  render() {
     return (
-      <div className="col-12">
-        <h1 className="text-center">Demo text</h1>
-      </div>
+      <Product products={this.state.products}/>
     );
   }
 }
