@@ -2,9 +2,8 @@
 @import "./imports.scss";
 
 body {
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
-  color: pink;
+  background-color: $black;
+  color: $pink;
   font-size: 15px;
 }
 
