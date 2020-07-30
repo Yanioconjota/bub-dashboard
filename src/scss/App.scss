@@ -5,13 +5,15 @@ body {
   background-color: #282c34;
   font-size: calc(10px + 2vmin);
   color: pink;
+  font-size: 15px;
 }
 
 header {
   padding: 1rem 0;
-  p {
-    margin: 0;
-  }
+}
+
+p {
+  margin: 0;
 }
 
 .App-logo {

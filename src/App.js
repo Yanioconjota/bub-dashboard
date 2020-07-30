@@ -16,11 +16,13 @@ function App() {
       <Header name="BuB"/>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 col-lg-6">
             <Users />
           </div>
+          <div className="col-12 col-lg-6">
+            <Products/>
+          </div>
         </div>
-        <Products/>
       </div>
     </div>
     
