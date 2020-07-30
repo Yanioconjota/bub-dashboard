@@ -3,9 +3,13 @@ import logo from '../logo.svg';
 
 let Header = (props) => {
   return (
-    <header className="d-flex align-items-center">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>React Dashboard {props.name}</p>
+    <header>
+      <div className="container">
+        <nav className="d-flex align-items-center">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>React Dashboard {props.name}</p>
+        </nav>
+      </div>
     </header>
   );
 }

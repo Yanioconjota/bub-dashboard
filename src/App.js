@@ -12,14 +12,16 @@ function App() {
   ];
   
   return (
-    <div className="container">
-      <div className="row">
-        <Header name="BuB"/>
-        <div className="col-12">
-          <Users />
+    <div>
+      <Header name="BuB"/>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <Users />
+          </div>
         </div>
+        <Products/>
       </div>
-      <Products/>
     </div>
     
     

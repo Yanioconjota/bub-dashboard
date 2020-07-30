@@ -14,7 +14,7 @@ class Users extends Component {
   }
   render() {
     return (
-    <User users={this.state.users}/>
+      <User users={this.state.users}/>
     );
   }
 }
