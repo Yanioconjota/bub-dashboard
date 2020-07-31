@@ -36,7 +36,7 @@ class Categories extends Component {
       <div>
         <p>Total de categorías en la DB: {this.state.categories.totalCategories} </p>
         <hr/>
-        <p>Categorías activas por juego </p>
+        <p>Categorías por juego disponible</p>
         <ul className="list-unstyled">
           {Object.keys(this.state.countBycat)
             .map( (key, index) => {
