@@ -39,8 +39,11 @@ class Users extends Component {
 
   render() {
     return (
-      <div>
-        <User users={this.state.users} />
+      <div className="row">
+        <div className="col-12">
+          <h4>Usuarios:</h4>
+        </div>
+        <User users={this.state.users}/>
         <LastUser lastUser={this.state.lastUser} />
       </div>
     );

@@ -34,13 +34,14 @@ class Categories extends Component {
   render() {
     return (
       <div>
-        <h3>Categorías</h3>
-        <h5>Total de categorías en la DB: {this.state.categories.totalCategories} </h5>
+        <p>Total de categorías en la DB: {this.state.categories.totalCategories} </p>
+        <hr/>
+        <p>Categorías activas por juego </p>
         <ul className="list-unstyled">
           {Object.keys(this.state.countBycat)
             .map( (key, index) => {
               return <li key={key}>
-                      <strong>{key}</strong> {this.state.countBycat[key]}
+                      <small>{key}: {this.state.countBycat[key]}</small>
                     </li>
           })}
         </ul>
