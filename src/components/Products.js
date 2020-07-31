@@ -5,12 +5,30 @@ class Products extends Component {
   constructor() {
     super();
     this.state = {
-      products: [
-        { name: 'GTAV', price: 4000 },
-        { name: 'The Witcher 3', price: 1500 },
-        { name: 'Red Dead Redemption 2', price: 5000 },
-      ]
+      products: []
     }
+  }
+  apiCall(url, handler) {
+    fetch(url)
+      .then(response => response.json())
+      .then(response => handler(response))
+      .catch(err => console.log(err))
+  }
+
+  showProduct = (response) => {
+    console.log(response);
+    this.setState({
+      products: response.data
+    });
+  }
+
+  componentDidMount() {
+    console.log("Component mounted!");
+    this.apiCall('http://localhost:5555/api/products/', this.showProduct);
+  }
+
+  componentDidUpdate() {
+    console.log("Component updated!");
   }
   render() {
     return (
