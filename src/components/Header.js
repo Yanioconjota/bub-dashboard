@@ -6,8 +6,8 @@ let Header = (props) => {
     <header>
       <div className="container">
         <nav className="d-flex align-items-center">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>React Dashboard {props.name}</p>
+          <i className="icon-bub text-sunflower App-logo"></i>
+          <p className="brand"><span>{props.name}</span> React Dashboard</p>
         </nav>
       </div>
     </header>

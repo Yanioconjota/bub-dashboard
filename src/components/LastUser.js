@@ -2,26 +2,24 @@ import React from 'react';
 
 let LastUser = ({lastUser}) => {
   return (
-    <div>
-      <h1></h1>
-      <h3>Último usuario agregado: </h3>
-      <ul className="list-unstyled">
-        <li className="my-3 p-3">
+    <div className="card col">
+      <p>Último usuario agregado</p>
+      <hr/>
+      <div className="user-container">
+        <div className="img-wrapper" style={{backgroundImage: 'url('+ lastUser.image + ')'}}>
+        </div>
+        <div className="data">
           <p>
-            <strong> id: </strong> {lastUser.id}
+            <small><strong> id: </strong> {lastUser.id}</small>
           </p>
           <p>
-            <strong> nombre: </strong> {lastUser.name} {lastUser.lastname}
+            <small><strong> nombre: </strong> {lastUser.name} {lastUser.lastname}</small>
           </p>
           <p>
-            <strong>mail:</strong> {lastUser.email}
+            <small><strong>mail:</strong> {lastUser.email}</small>
           </p>
-          <p>
-            <strong>endpoint:</strong> {lastUser.endpoint}
-          </p>
-          <img src={lastUser.image} alt="" className="w-50" />
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 }
